@@ -9,38 +9,90 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>CineMovies - Filmes e Séries</title>
 </head>
 
 <body>
     <div class="container">
+        
+        <header class="menu">
 
-        <div class="menu">
             <div class="hamburguer">
                 <div class="line" id="line1"></div>
                 <div class="line" id="line2"></div>
                 <div class="line" id="line3"></div>
-                <span>fechar</span>
+                <span>FECHAR</span>
             </div>
             
-            <div class="home">
+            <nav class="home">
                 <ul>
                     <div class="logo">
-                        <img src="image/pipocfavicon.png" alt="home">
-                        <h1>CineMovies</h1>
+                        <img src="images/pipocfavicon.png" alt="home" id="logo" width=60 height=40>
+                        <h1><a href="#home" class="menu-link">CineMovies</a></h1>
                     </div>
                     <div class="busca">
-                        <img src="busca.png" alt="Buscar" id="btnBuscar">
-                        <input type="text" id="txtBusca" placeholder="Buscar...">
+                        <img src="images/busca.png" alt="Buscar" class="btnBuscar" width=20 height=20>
+                        <input type="text" id="txtBusca" placeholder="O que deseja assistir?" >
                         <button type="submit" id="btnBusca">Buscar</button>
                     </div>                    
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Contato</a></li>
-                    <li><a href="">Login</a></li>
-                    <li><a href="">Cadastrar</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#cadastrar">Cadastrar</a></li>
                 </ul>
-            </div>
-        </div>
+            </nav>
+        </header>
+
+        <aside class="sidebar">
+            <nav>
+                <ul class="menuSidebar">
+                    <h1>Categorias:</h1>
+                    <li class="menu-item"><a href="#lacamentos" class="menu-link">Lançamentos</a></li>
+                    <li class="menu-item"><a href="#acao" class="menu-link">Ação</a></li>
+                    <li class="menu-item"><a href="#comedia" class="menu-link">Comédia</a></li>
+                    <li class="menu-item"><a href="#infantil" class="menu-link">Infantil</a></li>
+                    <li class="menu-item"><a href="#romance" class="menu-link">Romance</a></li>
+                    <li class="menu-item"><a href="#terror" class="menu-link">Terror</a></li>
+                    <li class="menu-item"><a href="#series" class="menu-link">Séries</a></li>
+                </ul>
+            </nav>            
+        </aside>
+    
+        <section class="banner">
+            
+                <ul class="slider">
+                    <li>
+                        <input type="radio" id="slide1" name="slide" checked="">
+                        <label for="slide1"></label>
+                        <img src="images/circulodefogo-banner.jpg" alt="Filme Circulo de Fogo">
+                    </li>
+                    <li>
+                        <input type="radio" id="slide2" name="slide" checked="">
+                        <label for="slide2"></label>
+                        <img src="images/tintin-banner.jpg" alt="Filme Tintin">
+                    </li>
+                    <li>
+                        <input type="radio" id="slide3" name="slide" checked="">
+                        <label for="slide3"></label>
+                        <img src="images/espnatal-banner.jpg" alt="Filme Esperança de Natal">
+                    </li>
+                    <li>
+                        <input type="radio" id="slide4" name="slide" checked="">
+                        <label for="slide4"></label>
+                        <img src="images/mortalkombat-banner.png" alt="Filme Mortal Kombat">
+                    </li>
+                    <li>
+                        <input type="radio" id="slide5" name="slide" checked="">
+                        <label for="slide5"></label>
+                        <img src="images/glass-banner.jpg" alt="Filme Glass">
+                    </li>
+                </ul>
+            
+        </section>
     </div>
+
+
 </body>
+<script src="script.js"></script>
 </html>
