@@ -21,6 +21,12 @@ html {
     scroll-behavior: smooth;
 }
 
+.home {
+    margin: 0;
+    width: 100%;       
+    
+}
+
 .menu {
     margin: 0;
     display: flex;
@@ -287,16 +293,18 @@ li:hover {
 /*Configuração slider de filmes*/
 .banner{
     width: 100%;
-    height: 90vh;   
+    height: 550px;  
+    margin: 0; 
     overflow: hidden;
+    background-color: black;
 }
 
 .slider {
-    display: block;
-    /*height: 293px;*/
+    display: block;    
     max-width: 100%;
-    margin: auto;
+    margin: 0;
     margin-top: 60px;
+    margin-bottom: 0;
     position: relative;
 }
 
@@ -360,4 +368,54 @@ li:hover {
     opacity: 1;
     visibility: visible;
     z-index: 10;
+}
+
+/*Configuração sessão categorias*/
+.categorias {
+    width: 100%;
+    height: 1rem;
+    margin: 0;    
+    padding: 20px;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.categorias ul{
+    width: 100%;
+    height: 4rem;    
+    position: fixed;
+    display: flex;
+    flex-wrap:wrap;
+    list-style: none;
+    align-items: baseline;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+
+.categorias button {
+    margin: 0;
+    width: 8rem;
+    height: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: .8rem;
+    color: #fff;
+    border-radius: .6rem;
+    border: none;
+    background-color: rgb(43, 5, 43);
+    background: -webkit-linear-gradient(to right, #33032f, #2d033b);  
+    background: linear-gradient(to right, #a734a1, #360746);
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+    
+}
+
+.categorias button:hover {
+    opacity: .8;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
 }
