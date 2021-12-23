@@ -23,21 +23,23 @@ html {
 
 .home {
     margin: 0;
-    width: 100%;       
-    
+    width: 100%;        
+    position: fixed;    
+    display: flex;
 }
 
 .menu {
     margin: 0;
-    display: flex;
+    display: flex;    
     align-items: center;    
+    position: fixed; 
+    z-index: 11;
 }
 
 /*Configuração do Logo*/
-.logo {
+.home .logo {
     float:left;
-    margin: 0; 
-    margin-top: 10px;    
+    margin: 0;         
     max-width: 10%;
     max-height: 10%;           
     display: flex;    
@@ -70,28 +72,25 @@ html {
     justify-content: space-between;
 }
 
-
-
 /*Configuração dos botões do Menu*/
 .menu button {
     width: 100%;
     height: 2rem;
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.2rem;
-    
+    font-size: 1.2rem;    
 }
 
 .menu ul{
     width: 100%;
-    height: 5rem;
+    height: 3rem;
     margin: 0;
-    padding: 10px;
+    padding: 5px;
     position: fixed;
     display: flex;
     flex-direction: row;
     list-style: none;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-evenly;
     background-color: black;
 }
@@ -106,6 +105,16 @@ html {
     color: #b082d1;
 }
 
+.home .cad a{
+    width: 100%;
+    height: 10rem;
+    margin: 0;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #eb3c08;
+}
+
 li:hover {
     cursor: pointer;
     opacity: 1;
@@ -117,7 +126,7 @@ li:hover {
     /*background-color: bisque;*/
     width: 2rem;
     height: 2rem;
-    position: absolute;
+    position: fixed;
     top:50%;
     left:1%;    
     z-index: 100;
@@ -235,21 +244,20 @@ li:hover {
     background-repeat: no-repeat;
     border:solid 2px #8c6ea1;
     border-radius:6px;
-    width:295px;
-    height:18px;
+    width:285px;
+    height:21px;
     left: 15rem;
-    padding: 3px;
+    padding: 0.5px;
     right: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0;        
 }
 
 .busca #txtBusca{
     float:right;
-    background-color:transparent;    
-    padding-left:15px;
+    background-color:transparent; 
     font-size: 1rem;     
     border:none;
     height:30px;
@@ -262,21 +270,23 @@ li:hover {
 .busca #btnBusca{
     border:none;
     float:right;
-    height:24px;
+    height:22px;
     border-radius:0 9px 9px 1.5;
-    width:190px;
+    width:200px;
     margin: 0;
-    padding: .1rem;
+    padding: 0;
     display: flex;
-    align-items: right;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     font-weight:bold;
-    background:#a33dec;
+    background:#a33dec;    
 }
 
 .busca #btnBusca:hover {
+    opacity: .8;
     cursor: pointer;
-    opacity: 3; 
+    opacity: 3;
+    color: rgb(247, 242, 245);
 }
 
 .btnBuscar img{
@@ -286,8 +296,7 @@ li:hover {
     justify-content: space-between;
     margin: 0;
     width: 100%;
-    height: 100%;
-    
+    height: 100%;    
 }
 
 /*Configuração slider de filmes*/
@@ -296,12 +305,13 @@ li:hover {
     height: 550px;  
     margin: 0; 
     overflow: hidden;
-    background-color: black;
+    background-color: black;    
 }
 
 .slider {
     display: block;    
-    max-width: 100%;
+    width: 100%;
+    height: 100vh;
     margin: 0;
     margin-top: 60px;
     margin-bottom: 0;
@@ -316,12 +326,12 @@ li:hover {
 .slider img {
     margin: auto;
     height: 100%;
-    max-width: 100%;
+    width: 100%;
     display: block;
     background-size: cover;
-    background: no-repeat;
+    background: no-repeat;    
     /*vertical-align: top;*/
-    object-fit: cover;
+    object-fit: cover;    
 }
 
 .slider input {
@@ -373,22 +383,23 @@ li:hover {
 /*Configuração sessão categorias*/
 .categorias {
     width: 100%;
-    height: 1rem;
+    height:2rem;
     margin: 0;    
-    padding: 20px;
-    position: fixed;
+    overflow: hidden;
+    /*position: fixed;*/
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: black;
 }
 
 .categorias ul{
     width: 100%;
-    height: 4rem;    
-    position: fixed;
+    height: 4rem;  
+    overflow: hidden;  
+    /*position: fixed;*/
     display: flex;
     flex-wrap:wrap;
     list-style: none;
@@ -396,7 +407,6 @@ li:hover {
     justify-content: space-evenly;
     background-color: black;
 }
-
 
 .categorias button {
     margin: 0;
@@ -410,11 +420,105 @@ li:hover {
     background-color: rgb(43, 5, 43);
     background: -webkit-linear-gradient(to right, #33032f, #2d033b);  
     background: linear-gradient(to right, #a734a1, #360746);
-    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
-    
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);    
 }
 
 .categorias button:hover {
+    opacity: .8;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+/*Configuração Cards*/
+.cards {
+    margin: 0;
+    background-color: #000;
+    width: 100%;
+    height: 30rem;
+}
+
+.cards-header {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.cards-header h1 {
+    color: #692e92;
+    font-size: 2rem; 
+    margin-top: 2.5rem;   
+    border-bottom: solid 2px #692e92;
+    
+}
+
+.top-stars {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-bottom: 3rem;    
+}
+
+.card {
+    width: 15rem;
+    height: 20rem;    
+    position: relative;
+}
+
+.card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    border-radius: .5rem;
+}
+
+.card-img-wrapper img {
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;    
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;    
+}
+
+.card:hover .card-img-wrapper img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.card-info {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0.4rem 0.2rem 0.3rem rgba(0, 0, 0, .6);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.card-info h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #7a02cf;
+    margin-bottom: 1rem;
+}
+
+.card-info button {
+    width: 8rem;
+    height: 2rem;
+    font-family: var(--font-action);
+    font-size: .8rem;
+    color: #fff;
+    border-radius: .6rem;
+    border: none;
+    background-color: purple;
+    background: -webkit-linear-gradient(to right, #cc2b5e, #753a88);  
+    background: linear-gradient(to right, #cc2b5e, #753a88);
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);    
+}
+
+.card-info button:hover {
     opacity: .8;
     cursor: pointer;
     color: rgb(0, 0, 0);
