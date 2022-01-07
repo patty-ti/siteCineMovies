@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Definições SEO-->
+    <meta property='og:description' content='Os melhores filmes e séries você encontra aqui!'>
+    <meta property='og:title' content='CineMovies, o melhor site de filmes e séries de toda internet'>
+    <meta property='og:url' content='https://projcinemovies.netlify.app/'>
+    <meta property='og:image' content="images/pipocfavicon.png">
+    <meta property='og:type' content='website'>
+    <meta property='og:site_name' content='CineMovies'>
+    <!--Arquivos e Estilos-->
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -11,6 +19,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="manifest" href="images/site.webmanifest">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
     <title>CineMovies - Filmes e Séries</title>
 </head>
 
@@ -38,17 +47,17 @@
                 <ul>
                     <div class="logo">
                         <img src="images/pipocfavicon.png" alt="home" id="logo" width=60 height=40>
-                        <h1><a href="#home" class="menu-link">CineMovies</a></h1>
+                        <h1><a href="#" class="menu-link">CineMovies</a></h1>
                     </div>
                     <div class="busca">
                         <img src="images/busca.png" alt="Buscar" class="btnBuscar" width=20 height=20>
                         <input type="text" id="txtBusca" placeholder="O que deseja assistir?" >
                         <button type="submit" id="btnBusca">Buscar</button>
                     </div>                    
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                    <li><a href="#login">Login</a></li>
-                    <li><a href="#cadastrar" class="cad">Cadastrar</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="pages/contato.html">Contato</a></li>
+                    <li><a href="pages/login.html">Login</a></li>
+                    <li><a href="pages/cadastrar.html" class="cad">Cadastrar</a></li>
                 </ul>
             </nav>
         </header>
@@ -139,10 +148,12 @@
             </div>
 
             <div class="top-stars">
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="images/card-thecard.jpg" alt="Filme The Card Counter">                        
-                    </div>
+                <a class="link" href="pages/detalhethecard.html">
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="images/card-thecard.jpg" alt="Filme The Card Counter">                        
+                        </div>
+                </a>
                     <div class="card-info">   
                         <h3>The Card Counter</h3>
                         <div class="estrelas">

@@ -811,3 +811,21 @@ footer {
     background: -webkit-linear-gradient(to right, #cc2b5e, #753a88);  
     background: linear-gradient(to right, #cc2b5e, #753a88);
 }
+
+/*Config Página Filme The Card*/
+.player {    
+    background-color: #000000;
+    display: flex;
+    position: fixed;
+    z-index: 0;
+}
+
+.player > iframe {
+    width: 100vw;
+    height: 100vh;
+}
+.movie_info {
+    position: absolute;
+    z-index: 1;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+}
