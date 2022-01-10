@@ -600,7 +600,6 @@ li:hover {
     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);   
 }
 
-
 .card-info button:hover {
     opacity: .8;
     cursor: pointer;
@@ -610,18 +609,18 @@ li:hover {
 /*Configuração de Estrelas*/
 .estrelas input[type=radio] {
     display: none;       
-  }
-  .estrelas label i.fa:before {
+}
+.estrelas label i.fa:before {
     content:'\f005';
     color: #FC0;
-  }
-  .estrelas input[type=radio]:checked ~ label i.fa:before {
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
     color: #CCC;
-  }
-  .estrelas p {
+}
+.estrelas p {
     color: white;
     font-size: .8rem;
-  }
+}
 
 /*Configuração section pop*/
 .cards2 {
@@ -824,8 +823,180 @@ footer {
     width: 100vw;
     height: 100vh;
 }
-.movie_info {
+
+/*.movie_info {
     position: absolute;
     z-index: 1;
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+}
+
+.area_info {
+    display: flex;
+    margin: 67 2% 0px 2%;
+    height: 600px;
+    background-color: red;
+    
+}
+
+.cartaz_detalhe {
+    width: 156px;
+    height: 100%;
+    display: flex;   
+    flex-direction: column;    
+    align-items: center; 
+    margin: 67vh 0% 0px 2%;
+    height: 600px;
+    z-index: 999;
+    background-color: red;
+}
+
+.estrelas_detalhe  li{
+    text-align: center;        
+    color: rgb(235, 235, 29);
+    z-index: 999;
+}
+
+.trailer_detalhe {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 67vh 2% 0px 0%;
+    height: 600px;
+    background-color: blue;
+    z-index: 990;
+}
+
+.titulo_detalhe {
+    width: 100%;
+    height: 150px;
+    background-color: yellow;
+}
+
+.corpo_artigo {
+    display: flex;
+}
+
+.lateral_detalhe {
+    width: 300px;
+    height: 600px;
+    background-color: pink;
+}*/
+
+/*Configurações página de contato*/
+.sessao-contato {
+    height: 100vh;
+    width: 100%;
+    background-color: #08070a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-wrapper {
+    height: 30rem;
+    width: 60%;
+    display: flex;
+    box-shadow: 0 4rem 5rem rgba(17, 16, 16, 0.8);
+}
+
+.contato-left {
+    width: 35%;
+    background: 
+        linear-gradient(rgba(37, 35, 37, 0.6), (rgba(43, 40, 40, 0.9)));
+        
+    background-size: cover;    
+}
+
+.contato-right {
+    width: 65%;
+    padding: 1rem 4rem 4rem 4rem;
+    background-color: rgb(191, 148, 226);
+    
+}
+
+.sessao-contato h1 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: lighter;
+    color: #272626;
+}
+
+.sessao-contato h2 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #272626;
+}
+
+.sessao-contato form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px dashed #504c53;
+    width: 20rem;
+    height: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    margin: 0.8rem 0;
+}
+
+.input-group textarea {
+    padding-top: 0.2rem;
+    max-width: 20rem;
+    max-height: 3;
+}
+
+.input-group {
+    position: relative;
+}
+
+.field-label {
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.field:focus ~ label {
+    top: 0;
+    font-size: 1rem;
+}
+
+.field:focus {
+    border-bottom: 1px solid;
+}
+
+.botao-submit {
+    width: 10rem;
+    height: 3rem;
+    margin-top: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: .5rem;
+    border: none;
+    background-color: purple;
+    background: -webkit-linear-gradient(to right, #33032f, #2d033b);  
+    background: linear-gradient(to right, #a734a1, #360746);
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+}
+
+.botao-submit:hover {
+    opacity: .8;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
 }
