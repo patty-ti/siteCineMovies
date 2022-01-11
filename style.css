@@ -187,8 +187,7 @@ li:hover {
 }
 
 /*Configuração Menu hamburguer*/
-.hamburguer {
-    /*background-color: bisque;*/
+.hamburguer {    
     width: 2rem;
     height: 2rem;
     position: fixed;
@@ -240,7 +239,7 @@ li:hover {
     color: #fff;
     font-family: var(--font-action);
     opacity: 0;
-    z-index: 100;
+    z-index: 999;
 }
 
 .hamburguer span::before {
@@ -816,12 +815,12 @@ footer {
     background-color: #000000;
     display: flex;
     position: fixed;
-    z-index: 0;
+    z-index: 10;
 }
 
 .player > iframe {
     width: 100vw;
-    height: 100vh;
+    height: 100vh;    
 }
 
 /*.movie_info {
@@ -884,12 +883,13 @@ footer {
 
 /*Configurações página de contato*/
 .sessao-contato {
-    height: 100vh;
+    height: 88vh;
     width: 100%;
     background-color: #08070a;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center; 
+    
 }
 
 .contato-wrapper {
@@ -901,9 +901,7 @@ footer {
 
 .contato-left {
     width: 35%;
-    background: 
-        linear-gradient(rgba(17, 15, 17, 0.6), (rgba(19, 18, 18, 0.9)));
-        
+    background: linear-gradient(rgba(17, 15, 17, 0.6), (rgba(19, 18, 18, 0.9)));
     background-size: cover; 
     opacity:0.2;   
 }
@@ -914,9 +912,9 @@ footer {
 
 .contato-right {
     width: 75%;
-    padding: 1rem 4rem 4rem 4rem;
+    padding: 1rem 4rem 3rem 3rem;
     background-color: rgb(191, 148, 226);
-    z-index: 999;
+    z-index: 0;
 }
 
 .sessao-contato h1 {
@@ -1004,4 +1002,13 @@ footer {
     opacity: .8;
     cursor: pointer;
     color: rgb(0, 0, 0);
+}
+/*Configurações da página de cadastro*/
+.cadastrar {
+    background-color: black;
+    background-color: #08070a;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
 }
