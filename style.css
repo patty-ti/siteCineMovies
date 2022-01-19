@@ -447,7 +447,7 @@ li:hover {
 /*Configuração sessão categorias*/
 .categorias {
     width: 100%;
-    height:2rem;
+    height:2.5rem;
     margin: 0;    
     overflow: hidden;
     /*position: fixed;*/
@@ -967,7 +967,7 @@ footer {
 .field-label {
     position: absolute;
     left: 0;
-    top: 2rem;
+    top: 3.9rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
     text-transform: uppercase;

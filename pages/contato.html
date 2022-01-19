@@ -74,19 +74,19 @@
             <div class="contato-right">
                 <h1>Contato</h1>
                 <h2>Conte-nos como podemos te ajudar! Por favor, preencha todos os campos abaixo:</h2>
-                <form action="">
+                <form name=frm action="#" onsubmit="return validaForm(this);">
                     <div class="input-group">
-                        <input type="text" class="field" id="nome">
+                        <input type="text" class="field" name="nome" id="nome">
                         <label for="nome" class="field-label">Nome:</label>
                     </div>
 
                     <div class="input-group">
-                        <input type="text" class="field" id="email">
+                        <input type="text" class="field" name="email" id="email">
                         <label for="email" class="field-label">E-mail:</label>
                     </div>
 
                     <div class="input-group">
-                        <textarea class="field" id="msg"></textarea>
+                        <textarea class="field" name="msg" id="msg"></textarea>
                         <label for="msg" class="field-label">Mensagem:</label>
                     </div>
 
@@ -95,6 +95,7 @@
             </div>
         </div>
     </section>
+    <!--Definições do Footer-->
     <footer>
         <div class="footer-content">            
             <p>

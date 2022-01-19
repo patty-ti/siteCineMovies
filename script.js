@@ -63,3 +63,25 @@ function showCards(n) {
     x [slideShow - 1]. style.display = "block";
 
 }
+
+//Configuração formulário de contato
+function validaForm(frm) {
+    if (frm.nome.value == "" || 
+        frm.nome.value == null || 
+        frm.nome.value.lenght < 3) {
+            alert("Por favor, indique o seu nome!");
+            frm.nome.focus();
+            return false;
+    } if (frm.email.value.indexOf("@" , ".") == "" ||        
+        frm.email.value == "" ||
+        frm.email.value == null) {
+            alert("Por favor, indique um e-mail válido!");
+            frm.email.focus();
+            return false;
+    } if (frm.msg.value == "" || 
+        frm.msg.value == null) {
+            alert("Por favor, conte-nos como podemos te ajudar!");
+            frm.msg.focus();
+            return false;
+    }
+}  
