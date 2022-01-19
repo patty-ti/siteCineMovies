@@ -308,7 +308,7 @@ li:hover {
     background-repeat: no-repeat;
     border:solid 2px #8c6ea1;
     border-radius:6px;
-    width:285px;
+    width:250px;
     height:21px;
     left: 15rem;
     padding: 0.5px;
@@ -325,7 +325,7 @@ li:hover {
     font-size: 1rem;     
     border:none;
     height:30px;
-    width:190px;
+    width:160px;
     outline: none;
     display: flex;
     align-items: center;
@@ -1011,4 +1011,26 @@ footer {
     align-items: center;
     justify-content: center; 
     
+}
+
+/*Configurações da página de lançamentos*/
+.cards-categorias {
+    margin: 0;
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+}
+
+.cards-header-cat {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.cards-header-cat h1 {
+    color: #692e92;
+    font-size: 2rem; 
+    margin-top: 7.5rem;   
+    border-bottom: solid 2px #692e92;
+    width: 20%;
 }
