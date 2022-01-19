@@ -1,13 +1,13 @@
 //<![CDATA[
     $(window).on('load', function () {
         $('.preloader .inner').fadeOut();
-        $('.preloader').delay(350).fadeOut('slow'); 
-        $('body').delay(350).css({'overflow': 'visible'});
+        $('.preloader').delay(290).fadeOut('slow'); 
+        $('body').delay(295).css({'overflow': 'visible'});
     })
     //]]>
 
 //Menu Hamburguer
-var hamburguer = document.querySelector(".hamburguer");
+let hamburguer = document.querySelector(".hamburguer");
 
 hamburguer.addEventListener("click", function() {
     document.querySelector(".container").classList.toggle("show-menu");
@@ -15,12 +15,12 @@ hamburguer.addEventListener("click", function() {
 
 //Config Slider
 $(document).ready(function(){
-    var slids = $(".slider [type=radio]"); // busca os radios na div
-    var slids_len = slids.length; // conta o número de radios
-    var intervalo = 2; // intervalo em segundos
+    let slids = $(".slider [type=radio]"); // busca os radios na div
+    let slids_len = slids.length; // conta o número de radios
+    let intervalo = 3; // intervalo em segundos
     
     function rodar(){
-        var slids_ativo = $(".slider [type=radio]:checked")
+        let slids_ativo = $(".slider [type=radio]:checked")
         .attr("id")
         .match(/\d+/)[0]; // pega o valor numérico do id do radio checado
 
@@ -29,7 +29,7 @@ $(document).ready(function(){
        slids.eq(slids_ativo).prop("checked", true); // checa o radio da vez
     }
     
-    var tempo = setInterval(rodar, intervalo*1000); // inicia o temporizador
+    let tempo = setInterval(rodar, intervalo*1000); // inicia o temporizador
     
     $(".slider").hover(
        function(){ // função quando entra o mouse
